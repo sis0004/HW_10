@@ -32,4 +32,4 @@ Now, your call would look the same, but your report might look like:
 * reporting on NAs  
 * throwing an error if inappropriate arguments are passed by user  
 
-### Submit a .R file for the function and a .Rmd demonstrating how to use it.
+### Submit a .R file with the final version of the function and a .Rmd demonstrating how to use it.
