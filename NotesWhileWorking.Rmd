@@ -1,6 +1,34 @@
 ---
-title: "notes while working"
+title: "Hw10"
 author: "Sara Schreder"
 date: "11/1/2019"
 output: html_document
 ---
+
+#read in .csv file
+co2perCap <- read.csv(file="data/co2_emissions_tonnes_per_person_gapminder.csv")
+
+#co2_report function
+  #
+co2_report <- function(dat, country, year){
+  dat <- dat[dat$country==country, ]
+  dat <- dat[dat$year==year, ]
+  report <- dat
+  return(report)
+}
+
+co2_report <- function(dat, country, year){
+  cntry <- dat[dat$country==country, ]
+  yr <- dat[dat$year == year, ]
+  report <- yr
+  return(report)
+}
+
+co2_report <- function(dat, country, year){
+  country <- co2perCap[co2perCap$country == country, ]
+  year <- co2perCap[co2perCap$year == year, ]
+  report <- dat
+  return(report)
+}
+
+# Use print() at the end to get "tonnes CO2 per person per year"
