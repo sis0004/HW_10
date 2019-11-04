@@ -1,15 +1,21 @@
-#load packages
-library(gapminder)
+---
+title: "Hw10"
+author: "Sara Schreder"
+date: "11/1/2019"
+output: html_document
+---
 
 #read in .csv file
 co2perCap <- read.csv(file="data/co2_emissions_tonnes_per_person_gapminder.csv")
 
-# source in script
-source()
-
-#function to find the co2 per capita for a country in a given year
+#co2_report function
+```{r}
 co2_report <- function(country, year){
   dat <- co2perCap[co2perCap$country==country, year]
   report <- dat
   return(report)
 }
+```
+
+#Use print() at the end to get "tonnes CO2 per person per year"
+
