@@ -12,7 +12,7 @@ co2perCap <- read.csv(file="data/co2_emissions_tonnes_per_person_gapminder.csv")
 ```{r}
 co2_report <- function(country, year){
   dat <- co2perCap[co2perCap$country==country, year]
-  report <- dat
+  report <- paste0(dat, "tonnes CO2 per person per year")
   return(report)
 }
 ```
