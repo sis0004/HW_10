@@ -5,8 +5,20 @@ date: "11/1/2019"
 output: html_document
 ---
 ### Homework 10
-Goal: 
 
-#read in .csv file
-co2perCap <- read.csv(file="data/co2_emissions_tonnes_per_person_gapminder.csv")
+#### Objective
 
+#### Packages Used
+```{r}
+library(gapminder)
+```
+
+#### Data Used
+```{r}
+source("data/co2_emissions_tonnes_per_person_gapminder.csv")
+```
+#### Usage
+#### Languages Used
+* R
+
+#### Products
