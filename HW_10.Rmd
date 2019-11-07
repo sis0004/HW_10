@@ -1,21 +1,12 @@
 ---
 title: "Hw10"
-author: "Sara Schreder"
+author: "Sara Schreder and Tobi Ore"
 date: "11/1/2019"
 output: html_document
 ---
+### Homework 10
+Goal: 
 
 #read in .csv file
 co2perCap <- read.csv(file="data/co2_emissions_tonnes_per_person_gapminder.csv")
-
-#co2_report function
-```{r}
-co2_report <- function(country, year){
-  dat <- co2perCap[co2perCap$country==country, year]
-  report <- paste0(dat, "tonnes CO2 per person per year")
-  return(report)
-}
-```
-
-#Use print() at the end to get "tonnes CO2 per person per year"
 
