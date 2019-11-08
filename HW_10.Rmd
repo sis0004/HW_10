@@ -29,4 +29,3 @@ Example: CO2 report for China in 2001
 source("HW_10.R")
 per_capita_co2("China", 2001)
 ```
---- do we need to add return in the function?
