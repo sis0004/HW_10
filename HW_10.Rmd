@@ -1,24 +1,32 @@
 ---
 title: "Hw10"
-author: "Sara Schreder and Tobi Ore"
+author: "Sara and Tobi"
 date: "11/1/2019"
 output: html_document
 ---
 ### Homework 10
 
 #### Objective
+The goal of this exercise is to create a function that pulls CO2 per capita data from gapminder for a given country in a given year. Then, to give it a "grade" compared to other countries that year and improve the function to be more user friendly.   
 
 #### Packages Used
-```{r}
+```{r, echo=FALSE}
 library(gapminder)
 ```
 
 #### Data Used
-```{r}
-source("data/co2_emissions_tonnes_per_person_gapminder.csv")
-```
+`co2_emissions_tonnes_per_person_gapminder.csv`
+
 #### Usage
+The function is called `per_capita_co2`. The call for the function is `per_capita_co2("Country", year)`.
+
 #### Languages Used
 * R
 
 #### Products
+Example: CO2 report for China in 2001
+```{r, echo=FALSE}
+source("HW_10.R")
+per_capita_co2("China", 2001)
+```
+--- do we need to add return in the function?
